@@ -1,0 +1,31 @@
+h1{
+    padding: 50px;
+    margin: 5px;
+    text-align: center;
+}
+h2{
+    color:brown; font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    background-color:blanchedalmond;
+}
+li{
+    color:black; 
+    font-size:23px;
+    font-weight: bolder outset red;
+    text-align:left    
+}
+.lista{
+    border: 10px ;
+    border-style:dashed;
+    border-radius: 10px;
+    border-width: 10px;
+}
+footer{
+    color: black;
+    margin-top: 10px;
+    padding: 20px;    
+    background-color: azure;
+    text-align: center;
+}
