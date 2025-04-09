@@ -9,14 +9,14 @@
 <head></head>
 <body></body> -->
 
-<html> <!--onde fica todo o conteúdo da página-->
+<html lang="pt-br"> <!--onde fica todo o conteúdo da página-->
 
  <head>
 
   <title>Quiz para recuperar sua masculinidade</title> <!--será exibido na aba do navegador-->
   <meta charset="UTF-8">
   <meta name ="description"content="Um quiz para recuperar sua masculinidade"> <!--<meta name="description": Especifica que a meta tag é destinada à descrição da página. content="Um quiz para recuperar sua masculinidade": Define o conteúdo da descrição, que neste caso é um texto que explica o propósito da página.-->
-
+  <link rel="stylesheet" href="style.css">
  </head> <!--comando head é o cabeçalho ou seja o titulo do site, o topo-->
 
  <body>
@@ -32,7 +32,7 @@
         <p><br>volte a ser raiz como nunca antes com esse quiz<br></p>
         <p>clicando nesse link você verá toda a força do frontend <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Shheets">CSS</abbr></p>
     </section>
-    <!--Pergunta multipla escolha-->
+    <!--Pergunta multipla escolha--><hr>
     <section>
       <h2>comer graxa no café da manhã é ser raiz</h2>
       <form>    
@@ -57,35 +57,35 @@
       </form>
       
     </section>
-    <!--FAÇA O USUÁRIO DIGITAR-->
+    <!--FAÇA O USUÁRIO DIGITAR--><hr>
     <section>
       <h2>DIGA COM SUAS PALAVRAS O QUE É SER RAIZ:</h2>
       <form>
         <input type="text" id="r1" name="resposta1" placeholder="digite sua opnião...">
       </form>
     </section>
-    <!--senha-->
+    <!--senha--><hr>
     <section>
       <h2>ESCREVA UMA SENHA DE MACHO ALPHA</h2>
       <form>
         <input type="password" id="r2" name="resposta2" placeholder="digite uma senha"><!--placeholder cria descrição fantasma-->
       </form>
     </section>
-    <!--data-->
+    <!--data--><hr>
     <section>
       <h2>QUAL SUA DATA DE NASCIMENTO?</h2>
       <form>
         <input type="date" id="r3" name="resposta3">
       </form>     
     </section>
-    <!--caixa de upload de arquivo-->
+    <!--caixa de upload de arquivo--><hr>
     <section>
       <form>
         <h2>COLOQUE UM ARQUIVO RAIZ</h2>
         <input type="file" id="arquivo" name="caixaFile">
       </form>
     </section>
-    <!--menu suspenso-->
+    <!--menu suspenso--><hr>
     <section>
       <h2>SELECIONE O SEU TIPO DE MULHER</h2>
       <form>
@@ -98,17 +98,97 @@
         </select>
       </form>
     </section>
-    <!--imagem-->
+    <!--imagem--><hr>
     <section>
+      <h2>A QUAL JOGO PERTENCE ESSA IMAGEM</h2>
+      <figure>
+        <img src="./assets/eldenRing.jpg" alt="Elden Ring"><br>
+        <figcaption>Figura 1: intro de um jogo qualquer</figcaption><!--A tag <figcaption> exibe uma legenda para o elemento <figure>-->
+      </figure>
+       <input type="text" id="fg1" name="figura1" placeholder="informe sua resposta">      
+    </section>
+    <!--Criação de uma tabela--><hr> 
+    <section>
+      <h2>KIT DE HOMEM RAIZ</h2>
+      <table border="5">
+        <thead> <!--cabeçalho da tabela-->
+          <tr>
+            <th>NUMERAÇÃO</th>
+            <th>DESCRIÇÃO</th>
+          </tr>
+        </thead>
+        <tbody><!--conteúdo principal da tabela-->
+          <tr>
+            <td>1</td> <!--tag <td> usada para criar célula-->
+            <td>bolsa da hellow kit para carregar material de construção</td>         
+          </tr>
+            <td>2</td>
+            <td>ESPÁTULA DE CIMENTO PARA ALMOÇAR</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>BOLA DE MADEIRA PRA CALEJAR O PÉ</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>FOGÃO PENDURADO PARA TREINAR BOXE</td>
+          </tr>
+        </tbody>
+        <tfoot><!--rodapé de uma tabela-->
+          <tr>
+            <td colspan="2">BOA SORTE, agora você conhece o kit raiz</td><!--atributo colspan é o numero de colunas á ser equipado por um elemento-->
+          </tr>
+        </tfoot>
+      </table>
+    </section><hr> 
+    <!--lista desordenada-->
+    <section>
+      <h2>PALAVRAS DE UM HOMEM TCHOLA</h2>
+      <details>
+        <summary>CLIQUE AQUI PARA EXPANDIR</summary><!--nomeando a tag-->
+        <ul>
+          <li>NÃO ME RELACIONO COM FÊMEAS POIS NÃO SÃO DIGNAS</li>
+          <li>QUEM QUER TUDO ACABA SEM NADA</li>        
+        </ul>
+      </details> <!--engloba dados dentro de um espaço-->
+      
+    </section>
+    <!--lista ordenada-->
+    <section>
+      <h2>PALAVRAS DE UM HOMEM SÁBIO</h2>
+      <details>
+        <summary>CLIQUE AQUI PARA EXPANDIR</summary><!--nomeando a tag-->
+        <ol>
+          <li>ÁGUA MOLE, PEDRA DURA, TANTO BATE QUE ATÉ FURA</li>
+          <li>CABEÇA FRIA, PIKA QUENTE</li>        
+        </ol>
+      </details><br>
+      
+    </section>
+    
+    <!--FEEDBACK-->
+    <section>       
       <form>
-        <img src="./assets/eldenRing.jpg" alt="Elden Ring">
+        
+        <fieldset>
+          <legend>Informações de usuário</legend> <!--legenda do fio-->
+          <label for="nome">NOME</label>
+          <input type="text" id="nome" name="nome"><br>
+          <label for="email">EMAIL</label>
+          <input  type="email" id="email" name="email"><br>
+          <label for="feed">DESCREVA COMO SE SENTIU AO VELA</label>
+          <br><textarea id="feed" name="feed" rows="1" cols="37" placeholder="inserir texto..."></textarea> <!--comando rows defini quantidade de linhas inicial--> <!--cols defini numero de colunas inicial-->       
+          
+        </fieldset>
+        
       </form>
     </section>
-
-    
-
   </main
-  <footer></footer>
+  
+  <footer>
+    <p>&copyTODOS OS DIREITOS RESERVADOS <a href="https://pt.wikipedia.org/wiki/F%C3%BChrer" target="_blank">conheça mais sobre mim</a></p>
+    
+  </footer>
   
     <!--Em HTML, o elemento <main> é utilizado para indicar a área principal do conteúdo em uma página web. Ele é uma tag semântica, ou seja, ela tem um significado específico que ajuda a dar mais estrutura e clareza ao código, tanto para desenvolvedores quanto para mecanismos de busca e tecnologias assistivas (como leitores de tela).-->
     <!--Uma tag semântica em HTML é uma tag que tem um significado claro e descritivo sobre o conteúdo que ela envolve. Em outras palavras, o nome da tag já indica a sua função dentro da estrutura da página, facilitando o entendimento tanto para desenvolvedores quanto para navegadores e tecnologias assistivas, como leitores de tela.-->
