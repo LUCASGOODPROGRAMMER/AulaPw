@@ -1,5 +1,28 @@
-html{
-    text-align:left;
+h1{
+    font-size: 60px; /*tamanho da fonte do texto*/
+    background-color:black; /*corde fundo*/
+    color:aliceblue; /*cor do texto*/
+}
+h2{
+    font-size: 40px;
+    margin-top:0px;   /*distancia de um elemento ao redor*/
+    margin-block: 5px;
+}
+p{
+    font-size: 30px;
+    margin-top: 0px;
+}
+.lista{
+   
+ 
+}
+hr{
+    
+    border: 1px solid black; /*tamnho, tipo e cor*/
+    padding: 2px; /*espaço interno da borda*/
     
 }
-    
+body{
+    margin: 0;
+    padding: 0;
+}

@@ -13,7 +13,7 @@
 
  <head>
 
-  <title>Quiz para recuperar sua masculinidade</title> <!--será exibido na aba do navegador-->
+  <title>Aprendendo html</title> <!--será exibido na aba do navegador-->
   <meta charset="UTF-8">
   <meta name ="description"content="Um quiz para recuperar sua masculinidade"> <!--<meta name="description": Especifica que a meta tag é destinada à descrição da página. content="Um quiz para recuperar sua masculinidade": Define o conteúdo da descrição, que neste caso é um texto que explica o propósito da página.-->
   <link rel="stylesheet" href="style.css">
@@ -21,16 +21,19 @@
 
  <body>
   <header>
-    <h1>Quiz interativo para homens</h1>
-    <p>Teste seus conhecimentos e descubra se você ainda é raiz!</p> <!--é usado para definir um parágrafo de texto-->
+    <h1>QUIZ FEITO PARA VOCÊ</h1>
+    <p>Teste seus conhecimentos e descubra se você está apto</p> <!--é usado para definir um parágrafo de texto-->
   </header> <!--No HTML, o elemento <header> representa o cabeçalho de uma página ou de uma seção da página. Ele geralmente contém elementos como o título, menu de navegação, logotipos ou informações introdutórias.-->
   <main>
     <!--introdução-->
     <section>
         <h2>Sobre esse quiz</h2>
-        <p><strong>Especialmente</strong> desenvolvido para você que quer voltar a ser <em>raiz</em></p>
-        <p><br>volte a ser raiz como nunca antes com esse quiz<br></p>
-        <p>clicando nesse link você verá toda a força do frontend <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Shheets">CSS</abbr></p>
+        <ul class="lista">
+          <li>FEITO PARA TESTAR SEUS CONHECIMENTOS</li>
+          <li>ANALIZADO POR MAIS DE 10000 PROFISSIONAIS</li>
+          <li>GANHOU O OSCAR MELHOR QUIZ DO ANO</li>
+          <li>MAIS DE 100K DE VENDAS REALIZADO DO PROMPT</li>
+        </ul>
     </section>
     <!--Pergunta multipla escolha--><hr>
     <section>
@@ -43,7 +46,7 @@
         <label for="p2">NÃO<br></label>       
         
         <input type="radio" name="pergunta1" id="p3" value="DEPENDE">
-        <label for="p3">DEPENDE<br></label>
+        <label for="p3">DEPENDE<br></label><hr>
       </form>
       <h2>QUAIS DAS AFIRMAÇÕES É VÁLIDO PARA UMA PESSOA RAIZ</h2>
       <form>
