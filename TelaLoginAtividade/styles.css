@@ -85,8 +85,8 @@ form{
     
 }
 #logar{
-    padding: 20px;              
-    border: none;              
+    padding: 15px;              
+    border: none;             
            
     background: #04641b;        
     color: #ffffff;              
@@ -96,5 +96,8 @@ form{
     
 }
 #cancelar{
-
+    margin-top: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
