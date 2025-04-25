@@ -1,0 +1,22 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color:white;
+    font-size: 30px;        
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    background-color: black;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: aqua;
+    overflow: hidden;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
