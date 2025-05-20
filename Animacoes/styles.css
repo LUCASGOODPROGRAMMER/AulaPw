@@ -1,0 +1,154 @@
+/* Reset e base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Caixa base */
+.box {
+  background: #6200ee;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid transparent;
+}
+
+/* 1. Fade In */
+.box1 {
+  opacity: 0;
+  animation: fadeIn 10s forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 0.5; }
+}
+
+/* 2. Slide Up */
+.box2 {
+  transform: translateX(400px) translateY(500px);
+  animation: slideUp 3s ease-out forwards;
+}
+@keyframes slideUp {
+  to { transform: translateX(0); transform: translateY(0);}
+}
+
+/* 3. Rotate & Scale */
+.box3 {
+  transform: scale(0.8) rotate(0deg);
+  animation: rotateScale 2s ease-in-out forwards;
+}
+@keyframes rotateScale {
+  50%  { transform: scale(1.2) rotate(360deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* 4. Pulse */
+.box4 {
+  animation: pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+  0%   { transform: scale(1); opacity: 1; }
+  50%  { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* 5. Border Blink */
+.box5 {
+  border: 4px solid #fff;
+  animation: blinkBorder 1s step-start infinite;
+}
+@keyframes blinkBorder {
+  0%, 100% { border-color: #fff; }
+  50%     { border-color: #ff0000; }
+}
+
+/* 6. Horizontal Move */
+.box6 {
+  position: relative;
+  animation: moveRight 3s linear infinite;
+}
+@keyframes moveRight {
+  0%   { left: -300%; }
+  100% { left: 300%; }
+}
+
+/* 7. Shake */
+.box7 {
+  animation: shake 0.5s ease-in-out infinite;
+}
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-5px); }
+  50%  { transform: translateX(5px); }
+  75%  { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* 8. Color Cycle */
+.box8 {
+  animation: colorCycle 4s ease-in-out infinite;
+}
+@keyframes colorCycle {
+  0%   { background-color: #6200ee; }
+  50%  { background-color: #2962ff; }
+  100% { background-color: #00c853; }
+}
+
+/* 9. Grow Down */
+.box9 {
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: growDown 1s ease-out forwards;
+}
+@keyframes growDown {
+  to { transform: scaleY(1); }
+}
+
+/* 10. Spin */
+.box10 {
+  animation: spin 4s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+}
